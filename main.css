@@ -1,0 +1,107 @@
+.navbar a{
+    font-size: 20px;
+    color:white
+}
+.nav-item{
+    padding-right: 30px;
+}
+#logo{
+    height: 80px;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+.dropdown-menu{
+    
+ padding-top: 20% ;  
+  padding-left: 35%;
+    
+}
+
+.mb-3{
+    height: 30px;
+}
+.collapse{
+   margin-left:60%;
+}
+.btn:hover{
+    background-color: rgb(107, 92, 92);
+}
+.btn{
+    height: 40px;
+    width:100px;
+    margin-top:20px;
+    margin-left:20%;
+    background-color:rgb(255, 255, 255);
+    
+}
+.form-check{
+    font-size: 20px;
+}
+.form-control{
+    font-size: 20px;
+}
+.form-label{
+    font-size: 30px;
+}
+.nav-link:hover{
+    background-color: rgb(71, 66, 70);
+}
+.dropdown-menu .form-check-label{
+    margin-left: 0px;
+}
+.dropdown-menu label{
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+.dropdown-menu .mb-3{
+    margin-top:10px;
+    
+}
+.form-check-input{
+    margin-left: 100px;
+}
+.search{
+    margin-top:10px;
+    height: 25px;
+    
+}
+#carouselExampleDark{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 5);
+    border-radius: 10px;
+    width:500px;
+    margin-left:35%;
+    background-color: white;
+}
+
+.carousel-inner{
+    height: 600PX;
+    
+    
+}
+.d-block{
+    height: 600px;
+}
+#kathak{
+
+width:550px;
+padding: 0px;
+}
+#swipe{
+    padding-bottom: 10px;
+     background-color: rgb(255, 4, 4);
+}
+#button{
+    size: 5px;
+}
+#kotta{
+    height: 550px;
+    padding-top:30px;
+}
+#kozhikkod{
+    height: 600px;
+    padding-bottom: 10px;
+}
+#triva{
+    padding: 0px;
+}

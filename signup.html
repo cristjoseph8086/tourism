@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            signup page
+            Login page
         </title>
         <link rel="stylesheet" type="text/css" href="index.css">
         
@@ -10,7 +10,7 @@
     <body background="R (1).jpg">
         <div class="login_container">
             <div class="login_box">
-                <h2>signup</h2>
+                <h2>Login</h2>
                 <form action="index.html" onsubmit="return validate()">
                     <div class="user_box">
                         <input type="email" name="" required="" id="mail">
@@ -21,8 +21,12 @@
                         <label>phone</label>
                     </div>
                     <div class="user_box">
-                        <input  type="text" name="" required="" class="pass">
+                        <input  type="password" name="" required="" class="pass">
                         <label>Password</label>
+                    </div>
+                    <div class="user_box">
+                        <input  type="password" name="" required="" class="pass">
+                        <label>confirm Password</label>
                     </div>
                     
                     <input type="submit" value="signup" action="index.html" onclick="return validate()">

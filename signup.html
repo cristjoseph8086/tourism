@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body background="R (1).jpg">
-    <form class="dropdown-menu p-4">
-        <div class="mb-3">
-          <label for="exampleDropdownFormEmail2" class="form-label">user name</label>
-          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+    </head>
+    <body background="R (1).jpg">
+        <div class="login_container">
+            <div class="login_box">
+                <h2>Login</h2>
+                <form action="index.html" onsubmit="return validate()">
+                    <div class="user_box">
+                        <input type="email" name="" required="" id="mail">
+                        <label>email</label>
+                    </div>
+                    <div class="user_box">
+                        <input  type="text" name="" required="" id="number">
+                        <label>phone</label>
+                    </div>
+                    <div class="user_box">
+                        <input  type="text" name="" required="" class="pass">
+                        <label>Password</label>
+                    </div>
+                    
+                    <input type="submit" value="signup" action="index.html" onclick="return validate()">
+                </form>
+                <script src="form.js"></script>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleDropdownFormPassword2" class="form-label">password</label>
-          <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-        </div>
-        <div class="mb-3">
-            <label for="exampleDropdownFormPassword2" class="form-label">re-enter password</label>
-            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-          </div>
-        <div class="mb-3">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-            <label class="form-check-label" for="dropdownCheck2">
-              Remember me
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary text-light">Sign in</button>
-      </form>
-</body>
-</html>
+    </body>
+</html>    

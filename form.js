@@ -1,6 +1,6 @@
 let num = document.getElementById("number");
 let mail = document.getElementById("mail");
-let pwd = document.getElementById("pass");
+let pwd = document.getElementsByClassName("pass");
 var x= /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/
 var mailex=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
 var phnno=/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;

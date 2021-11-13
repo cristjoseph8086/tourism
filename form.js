@@ -13,12 +13,14 @@ function validate(){
         a= true;
     }else{
         alert("invalid email")
+        return false;
     }
     if(phnno.test(num.value)){
         b= true; 
 
     }else{
         alert("invalid phone number")
+        return false;
     }
     if(strongPassword.test(pwd.value)){
         pwd.style.border="2px solid green";
@@ -26,10 +28,12 @@ function validate(){
     }
     else if(mediumPassword.test(pwd.value)){
         pwd.style.border="2px solid orange";
+        return false;
         
     }
     else{
         pwd.style.border="2px solid red";
+        return false;
         
     }
     if(a===true && b===true && c===true && d===true&& e===true){

@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>
-            login page
+            signup page
         </title>
         <link rel="stylesheet" type="text/css" href="index.css">
         <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <!-- CSS Styling -->
         <style>
            
-            .passwordInput{
+            .fpasswordInput{
                 margin-top: 5%; 
                 text-align :center;
             }
@@ -24,19 +24,24 @@
     <body background="R (1).jpg">
         <div class="login_container">
             <div class="login_box">
-                <h2>login</h2>
-                <form action="index.html" onchange="return validate()">
+                <h2>signup</h2>
+                <form action="index.html">
                     <div class="user_box">
-                        <input type="email" name="" required="" id="mail" >
+                        <input type="email" name="" required="" id="mail" onchange="return validate()" >
                         <label>email</label>
                     </div>
-                    
                     <div class="user_box">
-                        <input type="password" name="" required="" >
-                        <label>password</label>
+                        <input  type="text" name="" required="" id="number"onchange="return phvalidate()">
+                        <label>phone</label>
                     </div>
-                    <a href="index.html" >login</a>
-                    <a href="index.html">back</a>
+                    <input onkeyup="return checkpaswd()" required type="password" placeholder=" password" id="PassEntry" class="form-control passwordInput">
+                    <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+                    <br><div class="user_bo">
+                    <input type="password" required placeholder="confirm password"  class="form-control passwordInput ">
+                    </div>
+                   <br>
+                   <button type="submit" class="inp">signup</button>
+                   <button type="submit" class="inp">back</button>
                 </form>
                 <script src="form.js"></script>
             </div>

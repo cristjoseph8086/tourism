@@ -25,23 +25,23 @@
         <div class="login_container">
             <div class="login_box">
                 <h2>signup</h2>
-                <form action="index.html" onchange="return validate()">
+                <form action="index.html">
                     <div class="user_box">
-                        <input type="email" name="" required="" id="mail" >
+                        <input type="email" name="" required="" id="mail" onchange="return validate()" >
                         <label>email</label>
                     </div>
                     <div class="user_box">
                         <input  type="text" name="" required="" id="number"onchange="return phvalidate()">
                         <label>phone</label>
                     </div>
-                    <input onkeyup="return checkpaswd()" type="password" placeholder=" password" id="PassEntry" class="form-control passwordInput">
+                    <input onkeyup="return checkpaswd()" required type="password" placeholder=" password" id="PassEntry" class="form-control passwordInput">
                     <span id="StrengthDisp" class="badge displayBadge">Weak</span>
                     <br><div class="user_bo">
-                    <input type="password" placeholder="confirm password"  class="form-control passwordInput ">
+                    <input type="password" required placeholder="confirm password"  class="form-control passwordInput ">
                     </div>
                    <br>
-                   <a href="index.html" >signup</a>
-                   <a href="index.html">back</a>
+                   <button type="submit" class="inp">signup</button>
+                   <button type="submit" class="inp">back</button>
                 </form>
                 <script src="form.js"></script>
             </div>

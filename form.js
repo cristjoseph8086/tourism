@@ -72,3 +72,18 @@ function checkpaswd(){
             }
         }); 
 }
+function confirmpas(){
+   let conpas=document.getElementById("conpas")
+   let pas=document.getElementById("PassEntry")
+   if(pas.value===''){
+       alert("password can't be empty")
+       return false;
+   }
+   else if(conpas.value===pas.value){
+       c=true;
+
+   }else{
+       alert("passwords don't match")
+       return false;
+   }
+};

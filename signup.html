@@ -37,10 +37,10 @@
                     <input onkeyup="return checkpaswd()" required type="password" placeholder=" password" id="PassEntry" class="form-control passwordInput">
                     <span id="StrengthDisp" class="badge displayBadge">Weak</span>
                     <br><div class="user_bo">
-                    <input type="password" required placeholder="confirm password"  class="form-control passwordInput ">
+                    <input type="password" required placeholder="confirm password" id="conpas" onchange ="return confirmpas()"  class="form-control passwordInput ">
                     </div>
                    <br>
-                   <button type="submit" class="inp">signup</button>
+                   <button type="submit" class="inp" >signup</button>
                    <button type="submit" class="inp">back</button>
                 </form>
                 <script src="form.js"></script>
